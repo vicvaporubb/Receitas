@@ -1,195 +1,193 @@
 /* ------------------------------
-   FONTES (Google Fonts sugeridas)
-   Playfair Display + Lora
+   FONTES (Google Fonts)
 ------------------------------ */
-@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500&family=Playfair+Display:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Lora:wght@400;500&display=swap');
 
 /* ------------------------------
    ESTILOS GERAIS
 ------------------------------ */
 body {
-    color: #4f4f4f;
-    background: #f8f6f1;
+    color: #3c3c3c;
+    background: #f7f4ea url('https://www.transparenttextures.com/patterns/paper-fibers.png'); /* textura papel rústico */
     margin: 0;
-    font-family: 'Lora', serif; /* Texto com vibe clássica */
-    margin-bottom: 100px;
+    font-family: 'Lora', serif;
+    margin-bottom: 120px;
 }
 
-/* Cabeçalho */
+/* ------------------------------
+   CABEÇALHO
+------------------------------ */
 header {
-    border-bottom: solid 2px #d09f77;
-    padding: 25px;
-    font-size: 38px;
-    color: #d09f77;
+    border-bottom: solid 3px #a63232;
+    padding: 30px;
+    font-size: 40px;
+    color: #a63232;
     text-align: center;
-    font-family: 'Playfair Display', serif; /* Fonte sofisticada */
+    font-family: 'Cinzel', serif;
     background: linear-gradient(135deg, #fff, #f4ede4);
-    box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    letter-spacing: 3px;
     position: sticky;
     top: 0;
     z-index: 1000;
-    letter-spacing: 2px;
 }
 
 /* Títulos */
 h1, h2, h3 {
-    font-family: 'Playfair Display', serif;
-    color: #8f7b4a;
+    font-family: 'Cinzel', serif;
+    color: #4a6f4f; /* verde oliva */
     font-weight: 600;
     margin-bottom: 15px;
     text-align: center;
 }
 
-/* Parágrafos */
 p {
     font-size: 18px;
     line-height: 1.7;
-    color: #4f4f4f;
-    text-align: left; /* Agora alinhado à esquerda */
-    margin-bottom: 15px;
+    text-align: left;
+    color: #3c3c3c;
 }
 
 /* ------------------------------
    SEÇÃO DE CHAMADA
 ------------------------------ */
 .chamada {
-    background: linear-gradient(120deg, #9e9e9e, #cfcfcf);
-    padding: 80px 20px;
+    background: linear-gradient(120deg, #a63232, #8f2a2a);
+    padding: 90px 20px;
     display: flex;
     justify-content: center;
     text-align: center;
     color: white;
-    border-radius: 0 0 20px 20px;
-    box-shadow: inset 0 -5px 20px rgba(0,0,0,0.1);
+    border-radius: 0 0 25px 25px;
+    box-shadow: inset 0 -6px 25px rgba(0,0,0,0.25);
 }
 
 .chamada-texto {
     max-width: 700px;
     animation: fadeInUp 1.2s ease;
+    font-family: 'Lora', serif;
 }
 
 /* ------------------------------
    CATEGORIAS
 ------------------------------ */
 .categoria {
-    margin-top: 60px;
+    margin-top: 70px;
     padding: 0 20px;
 }
 
 .categoria h2 {
-    color: #8f7b4a;
-    font-size: 26px;
+    color: #a63232;
+    font-size: 28px;
     margin-bottom: 15px;
     text-align: center;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Cinzel', serif;
+    border-bottom: 2px solid #d6b370;
+    display: inline-block;
+    padding-bottom: 5px;
 }
 
 /* Carrossel de vídeos */
 .categoria-videos {
     display: flex;
     overflow-x: auto;
-    gap: 16px;
-    padding: 20px;
-    background: #fff;
-    border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    gap: 18px;
+    padding: 25px;
+    background: #fffdfa;
+    border-radius: 14px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.15);
     scroll-behavior: smooth;
 }
 
-/* Scroll custom */
-.categoria-videos::-webkit-scrollbar {
-    height: 10px;
-}
-.categoria-videos::-webkit-scrollbar-thumb {
-    background: #d09f77;
-    border-radius: 10px;
-}
-.categoria-videos::-webkit-scrollbar-track {
-    background: #f0f0f0;
-}
-
 .categoria-videos img {
-    opacity: 0.9;
-    height: 200px;
-    width: 320px;
-    border-radius: 12px;
+    opacity: 0.95;
+    height: 220px;
+    width: 340px;
+    border-radius: 14px;
     object-fit: cover;
-    border: 2px solid #d09f77;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 3px solid #d6b370;
+    transition: transform 0.4s ease, filter 0.4s ease, box-shadow 0.4s ease;
 }
 
 .categoria-videos img:hover {
-    opacity: 1;
-    transform: scale(1.05);
-    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
-    border-color: #8f7b4a;
+    transform: scale(1.07);
+    filter: sepia(20%) contrast(1.1);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+    border-color: #a63232;
 }
 
 /* ------------------------------
    RECEITAS
 ------------------------------ */
 .receita-card {
-    background-color: #fff;
-    border-radius: 12px;
-    padding: 25px;
-    margin: 25px auto;
-    max-width: 800px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    background-color: #fffdfa;
+    border-radius: 14px;
+    padding: 30px;
+    margin: 35px auto;
+    max-width: 850px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid #d6b370;
 }
 
 .receita-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.18);
 }
 
 .receita-card h3 {
-    font-size: 28px;
-    color: #8f7b4a;
-    margin-bottom: 12px;
+    font-size: 30px;
+    color: #4a6f4f;
+    margin-bottom: 15px;
+    font-family: 'Cinzel', serif;
 }
 
 /* ------------------------------
    BOTÕES
 ------------------------------ */
 button {
-    background: linear-gradient(135deg, #8f7b4a, #d09f77);
+    background: linear-gradient(135deg, #a63232, #d6b370);
     color: white;
-    padding: 12px 24px;
+    padding: 14px 28px;
     border: none;
-    border-radius: 30px;
+    border-radius: 35px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 600;
-    transition: transform 0.2s ease, background 0.3s ease;
     font-family: 'Lora', serif;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
 
 button:hover {
-    background: linear-gradient(135deg, #d09f77, #8f7b4a);
-    transform: scale(1.05);
+    background: linear-gradient(135deg, #d6b370, #a63232);
+    transform: scale(1.07);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
 }
 
 /* ------------------------------
    LINKS
 ------------------------------ */
 a {
-    color: #8f7b4a;
+    color: #a63232;
     text-decoration: none;
-    font-weight: 500;
-    transition: color 0.3s ease;
+    font-weight: 600;
     font-family: 'Lora', serif;
+    transition: color 0.3s ease;
 }
 
 a:hover {
-    color: #d09f77;
+    color: #4a6f4f;
     text-decoration: underline;
 }
 
+/* ------------------------------
+   ANIMAÇÕES
+------------------------------ */
 @keyframes fadeInUp {
     from {
         opacity: 0;
-        transform: translateY(30px);
+        transform: translateY(40px);
     }
     to {
         opacity: 1;

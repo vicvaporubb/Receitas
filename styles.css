@@ -1,42 +1,53 @@
+/* Definições gerais */
 body {
-    color: white;
-    background: black;
-    margin: 0px;
+    color: #fff;
+    background: #333;
+    margin: 0;
     font-family: "Chakra Petch", sans-serif;
     margin-bottom: 100px;
 }
 
 header {
-    border-bottom: solid 2px rgb(150, 15, 15);
+    border-bottom: solid 2px #e63946;
     padding: 20px;
     font-size: 32px;
-    color: rgb(150, 15, 15);
+    color: #e63946;
+    text-align: center;
 }
 
+h1, h2 {
+    font-family: 'Chakra Petch', sans-serif;
+    color: #e63946;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #e0e0e0;
+}
+
+/* Seção de chamada */
 .chamada {
-    background: rgb(128, 106, 114);
-    padding-bottom: 80px;
-    padding-top: 80px;
+    background: #6f4f4f;
+    padding-top: 60px;
+    padding-bottom: 60px;
     display: flex;
     justify-content: center;
+    text-align: center;
 }
 
 .chamada-texto {
     margin-right: 5%;
+    max-width: 600px;
 }
 
-h1 {
-    font-size: 40px;
-}
-
-p {
-    font-size: 20px;
-}
-
+/* Estilo para as categorias de receitas */
 .categoria-videos {
     display: flex;
     overflow-x: auto;
     gap: 10px;
+    padding: 20px;
+    background: #444;
 }
 
 .categoria {
@@ -46,15 +57,55 @@ p {
 }
 
 .categoria-videos img {
-    opacity: 0.5;
-    height: 200px;
+    opacity: 0.7;
+    height: 180px;
+    width: 300px;
+    border-radius: 10px;
+    object-fit: cover;
 }
 
 .categoria-videos img:hover {
     opacity: 1.0;
-    border: 3px solid rgb(150, 15, 15);
+    border: 3px solid #e63946;
 }
 
+/* Estilo para títulos de categorias */
 .categoria h2 {
-    color: rgb(150, 15, 15);
+    color: #e63946;
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Estilo para os detalhes das receitas */
+.receita-card {
+    background-color: #555;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.receita-card h3 {
+    font-size: 28px;
+    color: #e63946;
+}
+
+.receita-card p {
+    font-size: 18px;
+    color: #e0e0e0;
+}
+
+/* Botões */
+button {
+    background-color: #e63946;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #d62828;
 }

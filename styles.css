@@ -180,10 +180,6 @@ a:hover {
     color: #4a6f4f;
     text-decoration: underline;
 }
-
-/* ------------------------------
-   ANIMAÇÕES
------------------------------- */
 @keyframes fadeInUp {
     from {
         opacity: 0;

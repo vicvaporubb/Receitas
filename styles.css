@@ -186,9 +186,6 @@ a:hover {
     text-decoration: underline;
 }
 
-/* ------------------------------
-   ANIMAÇÕES
------------------------------- */
 @keyframes fadeInUp {
     from {
         opacity: 0;

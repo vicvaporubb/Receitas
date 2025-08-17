@@ -1,11 +1,17 @@
 /* ------------------------------
+   FONTES (Google Fonts sugeridas)
+   Playfair Display + Lora
+------------------------------ */
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500&family=Playfair+Display:wght@600;700&display=swap');
+
+/* ------------------------------
    ESTILOS GERAIS
 ------------------------------ */
 body {
     color: #4f4f4f;
-    background: #f8f6f1; /* Tom bege mais claro e clean */
+    background: #f8f6f1;
     margin: 0;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Lora', serif; /* Texto com vibe clássica */
     margin-bottom: 100px;
 }
 
@@ -13,30 +19,34 @@ body {
 header {
     border-bottom: solid 2px #d09f77;
     padding: 25px;
-    font-size: 36px;
+    font-size: 38px;
     color: #d09f77;
     text-align: center;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Playfair Display', serif; /* Fonte sofisticada */
     background: linear-gradient(135deg, #fff, #f4ede4);
     box-shadow: 0 3px 8px rgba(0,0,0,0.08);
     position: sticky;
     top: 0;
     z-index: 1000;
+    letter-spacing: 2px;
 }
 
 /* Títulos */
-h1, h2 {
-    font-family: 'Poppins', sans-serif;
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
     color: #8f7b4a;
     font-weight: 600;
+    margin-bottom: 15px;
     text-align: center;
-    margin-bottom: 20px;
 }
 
+/* Parágrafos */
 p {
     font-size: 18px;
     line-height: 1.7;
     color: #4f4f4f;
+    text-align: left; /* Agora alinhado à esquerda */
+    margin-bottom: 15px;
 }
 
 /* ------------------------------
@@ -71,6 +81,7 @@ p {
     font-size: 26px;
     margin-bottom: 15px;
     text-align: center;
+    font-family: 'Playfair Display', serif;
 }
 
 /* Carrossel de vídeos */
@@ -85,7 +96,7 @@ p {
     scroll-behavior: smooth;
 }
 
-/* Scroll mais discreto */
+/* Scroll custom */
 .categoria-videos::-webkit-scrollbar {
     height: 10px;
 }
@@ -138,11 +149,6 @@ p {
     margin-bottom: 12px;
 }
 
-.receita-card p {
-    font-size: 17px;
-    color: #4f4f4f;
-}
-
 /* ------------------------------
    BOTÕES
 ------------------------------ */
@@ -156,6 +162,7 @@ button {
     font-size: 16px;
     font-weight: 600;
     transition: transform 0.2s ease, background 0.3s ease;
+    font-family: 'Lora', serif;
 }
 
 button:hover {
@@ -171,6 +178,7 @@ a {
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease;
+    font-family: 'Lora', serif;
 }
 
 a:hover {
